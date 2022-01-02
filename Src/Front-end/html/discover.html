@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moves</title>
+    <!-- import css bootstrap -->
+        <link href="/Src/Framework/Bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- some css file -->
+        <link rel="stylesheet" href="/menu.css">
+        <link rel="stylesheet" href="/Src/Front-end/css/discover.css">
+    <!-- ============= -->
+</head>
+<body>
+
+<section>
+
+    <!-- Navbar -->
+    <nav>
+
+        <div class="menu navbar navbar-expand-md  navbar-dark text-white fixed-top">
+        
+            <div class="container">
+                <!-- <img src="img/undraw_programming_re_kg9v.svg" style="width: 60px; margin-right: 20px;"> -->
+                <!-- <a class="navbar-brand text-info " href="#">Jawad</a> -->
+            
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainmenu"
+                >
+                
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="mainmenu">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active ho" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        
+
+                        <li>
+                            <li class="nav-item">
+                                <a class="nav-link ho" href="/Src/Front-end/html/discover.html">Discover</a>
+                            </li>
+                            
+                        </li>
+
+                        <li class="nav-item dropdown" bg-dark>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Movies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color:  var(--colornav); color: #fff">
+                              <li><a style="color: #fff" class="dropdown-item" href="{{ url_for('topMovies') }}">Top Rated</a></li>
+                              <li><a style="color: #fff" class="dropdown-item" href="{{ url_for('trendingMov') }}">Popular</a></li>
+                              <li><a style="color: #fff" class="dropdown-item" href="{{ url_for('upcomingMovies') }}">Upcoming</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown" bg-dark>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Series
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color:  var(--colornav); color: #fff">
+                              <li><a style="color: #fff" class="dropdown-item" href="{{ url_for('topMovies') }}">Top Rated</a></li>
+                              <li><a style="color: #fff" class="dropdown-item" href="{{ url_for('upcomingMovies') }}">Popular</a></li>
+                              <li><a style="color: #fff" class="dropdown-item" href="{{ url_for('trendingMov') }}">Latest</a></li>
+                            </ul>
+                        </li>
+            
+
+                    </ul>
+                </div>
+
+
+                
+            
+            </div><br>
+
+            <div class="color"></div>
+
+        </div>
+
+
+        <span style="
+            display: block;
+            width: 100%;
+            height: 200px;
+            "
+            id="Home"
+            >
+        </span>
+
+    </nav>
+
+    
+
+
+
+    
+
+    <div class="container">
+
+        <header>
+            <h1 style="color: var(--titecolor); font-size: 72px;">
+                Discover
+            </h1>
+        </header>
+
+        
+
+<!-- 
+        <div class="c-card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/313/323/578/studio-ghibli-howl-s-moving-castle-anime-howl-wallpaper-preview.jpg" alt="" srcset="">
+            <div class="info">
+                <h1>Titile : {{title}} </h1>
+                <p>Rate:  </p>
+                <button>play</button>
+            </div>
+        </div> -->
+
+
+
+        <section>
+            <div class="cards grid">
+
+
+                
+                <a href="/Src/Front-end/html/movie.html">
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="https://c4.wallpaperflare.com/wallpaper/313/323/578/studio-ghibli-howl-s-moving-castle-anime-howl-wallpaper-preview.jpg" alt="mountain img" />
+                        </div>
+                        <div class="card-content">
+                            <h1>Title: move</h1>
+                            <h5>
+                                Rate: 5 
+                            </h5>
+                            <h5>
+                                Descripton : 
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+                
+                
+
+
+
+            </div>
+            </section>
+
+           
+
+            
+       
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <footer>
+
+            <div class="container">
+                <ul>
+                    <a href="">About</a>
+                    <a href="">TMDB Rights</a>
+                    <a href="">Telegram</a>
+                    <a href="">Policy</a>
+            </div>
+
+    </footer> -->
+
+
+
+
+</section>
+
+    
+
+    
+<!-- JavaScript File -->
+<script src="/Src/Framework/Bootstrap/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sh20raj/AudiPlay/audiplay.min.js"></script>
+<script src="script.js"></script>
+<!-- =============== -->
+</body>
+</html>
