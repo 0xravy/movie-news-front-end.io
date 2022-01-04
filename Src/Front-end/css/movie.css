@@ -92,13 +92,17 @@ p, h1
         margin: 0px;
         margin-bottom: 0px;
     }
+    .movie-description p
+    {
+        font-size: 20px;   
+    }
 
 }
 @media (max-width: 350px)
 {
     p
     {
-        font-size: 0.1rem;
+        font-size: 2rem;
     }
     .movie-description span h1
     {
